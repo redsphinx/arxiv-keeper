@@ -17,7 +17,7 @@ class Entry(Base):
     authors = Column(String(1024))
     categories = Column(String(512))
     abstract = Column(String(4096))
-    read = Column(Boolean())
+    read = Column(Boolean(), default=False)
     date = Column(DateTime())
     saved = Column(DateTime())
 
