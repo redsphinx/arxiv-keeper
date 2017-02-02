@@ -8,6 +8,7 @@ if __name__ == '__main__':
     f = open(text_file, 'r')
     entry = None
     last_section = None
+    double_backslash_count = 0
     for line in f:
         line = line.strip()
         if is_new_entry(line):
@@ -15,6 +16,7 @@ if __name__ == '__main__':
                 entry.save()
             entry = Entry()
             last_section = None
+            double_backslash_count = 0
 
         elif is_arxiv_id(line):
             entry.arxiv_id = get_arxiv_id(line)
@@ -34,14 +36,18 @@ if __name__ == '__main__':
             last_section = None
         elif is_double_backslash(line):
             last_section = None
+            double_backslash_count += 1
         elif is_section(line):
+            last_section = None
             pass
         elif is_last_line(line):
+            last_section = None
             pass
         else:
             if last_section is None:
-                last_section = 'abstract'
-                entry.abstract = line.strip()
+                if double_backslash_count > 1:
+                    last_section = 'abstract'
+                    entry.abstract = line.strip()
             elif last_section == 'title':
                 entry.title += ' ' + line
             elif last_section == 'categories':
