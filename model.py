@@ -6,6 +6,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
+from settings import CONNECTION_STRING
+
 Base = declarative_base()
 
 
@@ -30,7 +32,7 @@ class Entry(Base):
         pass
 
 
-engine = create_engine('mysql://root:@localhost/arxiv_keeper')
+engine = create_engine(CONNECTION_STRING)
 if __name__ == '__main__':
     Base.metadata.create_all(engine)
 else:
