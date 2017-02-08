@@ -17,7 +17,7 @@ folders = ['/Users/erdicalli/Documents/papers/neurant/',
 downloaded = False
 for command in user_input:
     if not downloaded and '5' > command > '0':
-        subprocess.call(['mkdir', tmp_folder])
+        subprocess.call(['mkdir', '-p', tmp_folder])
         urllib.urlretrieve(arxiv_download_url_template % arxiv_id, tmp_paper_template % (arxiv_id))
         downloaded = True
     if '5' > command > '0':
