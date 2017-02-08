@@ -1,4 +1,4 @@
-CONNECTION_STRING = 'mysql://root:@localhost/arxiv_keeper'
+CONNECTION_STRING = 'mysql://username:password@localhost/arxiv_keeper'
 
 FOLDERS = ['/Users/erdicalli/Documents/papers/neurant/',
            '/Users/erdicalli/Documents/papers/internship/',
