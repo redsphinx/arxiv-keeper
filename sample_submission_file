@@ -1,0 +1,839 @@
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01795
+Date: Mon, 6 Feb 2017 21:13:43 GMT   (11kb)
+
+Title: ASHACL: Alternative Shapes Constraint Language
+Authors: Peter F. Patel-Schneider
+Categories: cs.AI
+Comments: 17 pages
+\\
+  ASHACL, a variant of the W3C Shapes Constraint Language, is designed to
+determine whether an RDF graph meets some conditions. These conditions are
+grouped into shapes, which validate whether particular RDF terms each meet the
+constraints of the shape. Shapes are themselves expressed as RDF triples in an
+RDF graph, called a shapes graph.
+\\ ( https://arxiv.org/abs/1702.01795 ,  11kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01886
+Date: Tue, 7 Feb 2017 06:02:50 GMT   (347kb,D)
+
+Title: Extracting Lifted Mutual Exclusion Invariants from Temporal Planning
+  Domains
+Authors: Sara Bernardini, Fabio Fagnani, David E. Smith
+Categories: cs.AI
+\\
+  We present a technique for automatically extracting mutual exclusion
+invariants from temporal planning instances. It first identifies a set of
+invariant templates by inspecting the lifted representation of the domain and
+then checks these templates against properties that assure invariance. Our
+technique builds on other approaches to invariant synthesis presented in the
+literature, but departs from their limited focus on instantaneous actions by
+addressing temporal domains. To deal with time, we formulate invariance
+conditions that account for the entire structure of the actions and the
+possible concurrent interactions between them. As a result, we construct a
+significantly more comprehensive technique than previous methods, which is able
+to find not only invariants for temporal domains, but also a broader set of
+invariants for non-temporal domains. The experimental results reported in this
+paper provide evidence that identifying a broader set of invariants results in
+the generation of fewer multi-valued state variables with larger domains. We
+show that, in turn, this reduction in the number of variables reflects
+positively on the performance of a number of temporal planners that use a
+variable/value representation by significantly reducing their running time.
+\\ ( https://arxiv.org/abs/1702.01886 ,  347kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01846
+Date: Tue, 7 Feb 2017 02:02:08 GMT   (823kb,D)
+
+Title: Development of JavaScript-based deep learning platform and application
+  to distributed training
+Authors: Masatoshi Hidaka, Ken Miura and Tatsuya Harada
+Categories: cs.CV cs.DC
+Comments: Workshop paper for ICLR2017
+\\
+  Deep learning is increasingly attracting attention for processing big data.
+Existing frameworks for deep learning must be set up to specialized computer
+systems. Gaining sufficient computing resources therefore entails high costs of
+deployment and maintenance. In this work, we implement a matrix library and
+deep learning framework that uses JavaScript. It can run on web browsers
+operating on ordinary personal computers and smartphones. Using JavaScript,
+deep learning can be accomplished in widely diverse environments without the
+necessity for software installation. Using GPGPU from WebCL framework, our
+framework can train large scale convolutional neural networks such as VGGNet
+and ResNet. In the experiments, we demonstrate their practicality by training
+VGGNet in a distributed manner using web browsers as the client.
+\\ ( https://arxiv.org/abs/1702.01846 ,  823kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01870
+Date: Tue, 7 Feb 2017 03:43:31 GMT   (100kb)
+
+Title: A New Point-set Registration Algorithm for Fingerprint Matching
+Authors: A. Pasha Hosseinbor, Renat Zhdanov, Alexander Ushveridze
+Categories: cs.CV
+Comments: Point pattern matching, point-set registration, fingerprint, minutia
+  matching, alignment
+\\
+  A novel minutia-based fingerprint matching algorithm is proposed that employs
+iterative global alignment on two minutia sets. The matcher considers all
+possible minutia pairings and iteratively aligns the two sets until the number
+of minutia pairs does not exceed the maximum number of allowable one-to-one
+pairings. The optimal alignment parameters are derived analytically via linear
+least squares. The first alignment establishes a region of overlap between the
+two minutia sets, which is then (iteratively) refined by each successive
+alignment. After each alignment, minutia pairs that exhibit weak correspondence
+are discarded. The process is repeated until the number of remaining pairs no
+longer exceeds the maximum number of allowable one-to-one pairings. The
+proposed algorithm is tested on both the FVC2000 and FVC2002 databases, and the
+results indicate that the proposed matcher is both effective and efficient for
+fingerprint authentication; it is fast and does not utilize any computationally
+expensive mathematical functions (e.g. trigonometric, exponential). In addition
+to the proposed matcher, another contribution of the paper is the analytical
+derivation of the least squares solution for the optimal alignment parameters
+for two point-sets lacking exact correspondence.
+\\ ( https://arxiv.org/abs/1702.01870 ,  100kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01933
+Date: Tue, 7 Feb 2017 09:22:11 GMT   (1748kb)
+
+Title: Hashing in the Zero Shot Framework via Domain Adaptation
+Authors: Shubham Pachori, Ameya Deshpande, Shanmuganathan Raman
+Categories: cs.CV
+\\
+  Techniques to learn hash codes which can store and retrieve large dimensional
+multimedia data efficiently have attracted broad research interests in the
+recent years. With rapid explosion of newly emerged concepts and online data,
+existing supervised hashing algorithms suffer from the problem of scarcity of
+ground truth annotations due to the high cost of obtaining manual annotations.
+Therefore, we propose an algorithm to learn a hash function from training
+images belonging to seen classes which can efficiently encode images of unseen
+classes to binary codes. Specifically, we project the image features from
+visual space and semantic features from semantic space into a common Hamming
+subspace. Earlier works to generate hash codes have tried to relax the discrete
+constraints on hash codes and solve the continuous optimization problem.
+However, it often leads to quantization errors. In this work, we use the
+max-margin classifier to learn an efficient hash function. To address the
+concern of domain-shift which may arise due to the introduction of new classes,
+we also introduce an unsupervised domain adaptation model in the proposed
+hashing framework. Results on the three image datasets show the advantage of
+using domain adaptation in learning a high-quality hash function and
+superiority of our method for the task of image retrieval performance as
+compared to several state-of-the-art hashing methods.
+\\ ( https://arxiv.org/abs/1702.01933 ,  1748kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01970
+Date: Tue, 7 Feb 2017 11:46:49 GMT   (7470kb,D)
+
+Title: Image Reconstruction using Matched Wavelet Estimated from Data Sensed
+  Compressively using Partial Canonical Identity Matrix
+Authors: Naushad Ansari, Anubha Gupta
+Categories: cs.CV
+\\
+  This paper proposes a joint framework wherein lifting-based, separable,
+image-matched wavelets are estimated from compressively sensed (CS) images and
+used for the reconstruction of the same. Matched wavelet can be easily designed
+if full image is available. Also matched wavelet may provide better
+reconstruction results in CS application compared to standard wavelet
+sparsifying basis. Since in CS application, we have compressively sensed image
+instead of full image, existing methods of designing matched wavelet cannot be
+used. Thus, we propose a joint framework that estimates matched wavelet from
+the compressively sensed images and also reconstructs full images. This paper
+has three significant contributions. First, lifting-based, image-matched
+separable wavelet is designed from compressively sensed images and is also used
+to reconstruct the same. Second, a simple sensing matrix is employed to sample
+data at sub-Nyquist rate such that sensing and reconstruction time is reduced
+considerably without any noticeable degradation in the reconstruction
+performance. Third, a new multi-level L-Pyramid wavelet decomposition strategy
+is provided for separable wavelet implementation on images that leads to
+improved reconstruction performance. Compared to CS-based reconstruction using
+standard wavelets with Gaussian sensing matrix and with existing wavelet
+decomposition strategy, the proposed methodology provides faster and better
+image reconstruction in compressive sensing application.
+\\ ( https://arxiv.org/abs/1702.01970 ,  7470kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01983
+Date: Tue, 7 Feb 2017 12:40:35 GMT   (1198kb,D)
+
+Title: Face Aging With Conditional Generative Adversarial Networks
+Authors: Grigory Antipov, Moez Baccouche, Jean-Luc Dugelay
+Categories: cs.CV
+Comments: 5 pages, 3 figures, submitted to ICIP 2017
+\\
+  It has been recently shown that Generative Adversarial Networks (GANs) can
+produce synthetic images of exceptional visual fidelity. In this work, we
+propose the GAN-based method for automatic face aging. Contrary to previous
+works employing GANs for altering of facial attributes, we make a particular
+emphasize on preserving the original person's identity in the aged version of
+his/her face. To this end, we introduce a novel approach for
+"Identity-Preserving" optimization of GAN's latent vectors. The objective
+evaluation of the resulting aged and rejuvenated face images by the
+state-of-the-art face recognition and age estimation solutions demonstrate the
+high potential of the proposed method.
+\\ ( https://arxiv.org/abs/1702.01983 ,  1198kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.02012
+Date: Tue, 7 Feb 2017 13:51:06 GMT   (1665kb,D)
+
+Title: Tracking using Numerous Anchor points
+Authors: Tanushri Chakravorty, Guillaume-Alexandre Bilodeau, Eric Granger
+Categories: cs.CV
+\\
+  In this paper, an online adaptive model-free tracker is proposed to track
+single objects in video sequences to deal with real-world tracking challenges
+like low-resolution, object deformation, occlusion and motion blur. The novelty
+lies in the construction of a strong appearance model that captures features
+from the initialized bounding box and then are assembled into anchor-point
+features. These features memorize the global pattern of the object and have an
+internal star graph-like structure. These features are unique and flexible and
+helps tracking generic and deformable objects with no limitation on specific
+objects. In addition, the relevance of each feature is evaluated online using
+short-term consistency and long-term consistency. These parameters are adapted
+to retain consistent features that vote for the object location and that deal
+with outliers for long-term tracking scenarios. Additionally, voting in a
+Gaussian manner helps in tackling inherent noise of the tracking system and in
+accurate object localization. Furthermore, the proposed tracker uses pairwise
+distance measure to cope with scale variations and combines pixel-level binary
+features and global weighted color features for model update. Finally,
+experimental results on a visual tracking benchmark dataset are presented to
+demonstrate the effectiveness and competitiveness of the proposed tracker.
+\\ ( https://arxiv.org/abs/1702.02012 ,  1665kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.02138
+Date: Tue, 7 Feb 2017 18:54:34 GMT   (15kb)
+
+Title: An Implementation of Faster RCNN with Study for Region Sampling
+Authors: Xinlei Chen, Abhinav Gupta
+Categories: cs.CV
+Comments: Technical Report, 3 pages
+\\
+  We adapted the join-training scheme of Faster RCNN framework from Caffe to
+TensorFlow as a baseline implementation for object detection. Our code is made
+publicly available. This report documents the simplifications made to the
+original pipeline, with justifications from ablation analysis on both PASCAL
+VOC 2007 and COCO 2014. We further investigated the role of non-maximal
+suppression (NMS) in selecting regions-of-interest (RoIs) for region
+classification, and found that a biased sampling toward small regions helps
+performance and can achieve on-par mAP to NMS-based sampling when converged
+sufficiently.
+\\ ( https://arxiv.org/abs/1702.02138 ,  15kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01877
+Date: Tue, 7 Feb 2017 04:40:50 GMT   (178kb,D)
+
+Title: A local search 2.917-approximation algorithm for duo-preservation string
+  mapping
+Authors: Yao Xu, Yong Chen, Taibo Luo and Guohui Lin
+Categories: cs.DS cs.DM
+Comments: 37 pages, 33 figures
+\\
+  We study the {\em maximum duo-preservation string mapping} ({\sc Max-Duo})
+problem, which is the complement of the well studied {\em minimum common string
+partition} ({\sc MCSP}) problem. Both problems have applications in many fields
+including text compression and bioinformatics. Motivated by an earlier local
+search algorithm, we present an improved approximation and show that its
+performance ratio is no greater than ${35}/{12} < 2.917$. This beats the
+current best $3.25$-approximation for {\sc Max-Duo}. The performance analysis
+of our algorithm is done through a complex yet interesting amortization. Two
+lower bounds on the locality gap of our algorithm are also provided.
+\\ ( https://arxiv.org/abs/1702.01877 ,  178kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.02133
+Date: Tue, 7 Feb 2017 18:46:02 GMT   (31kb)
+
+Title: Towards A Unified View of Linear Structure on Graph Classes
+Authors: Pierre Charbit, Michel Habib, Lalla Mouatadid, Reza Naserasr
+Categories: cs.DS
+\\
+  Graph searching, a mechanism to traverse a graph in a spe- cific manner, is a
+powerful tool that has led to a number of elegant algo- rithms. This paper
+focuses on lexicographic breadth first search (LexBFS) (a variant of BFS)
+introduced in [8] to recognize chordal graphs. Since then, there has been a
+number of elegant LexBFS based, often multi-sweep, algorithms. These are
+algorithms that compute a sequence of LexBFS orderings {\sigma}1 , . . . ,
+{\sigma}k , and use {\sigma}i to break ties when computing {\sigma}i+1 . The
+tie-breaking rule is often referred to as a + rule, and the graph search as
+LexBFS+ . We write LexBFS+ (G, {\sigma}i ) = {\sigma}i+1 . In this paper, we
+prove that LexBFS converges for a number of graph families, including interval
+graphs, cobipartite graphs, trees, and domino-free cocomparability graphs. In
+particular, we prove a fixed point theorem for LexBFS that shows the existence
+of two orderings {\sigma} and {\pi} where LexBFS+ (G, {\sigma}) = {\pi} and
+LexBFS+ (G, {\pi}) = {\sigma}. A consequence of this result, in particular, is
+the simplest algorithm to compute a transitive orientation for these graph
+classes, as well as providing a unified view of the linear structure seen on
+various graph families. In addition to this algorithmic consequence, we provide
+fixed point theorems for proper interval, interval, cobipartite, and
+domino-free cocomparability graphs, as well as trees. These are the first
+non-trivial results of this kind.
+\\ ( https://arxiv.org/abs/1702.02133 ,  31kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01803
+Date: Mon, 6 Feb 2017 21:53:09 GMT   (730kb,D)
+
+Title: A General Framework for Evaluating Callout Mechanisms in Repeated
+  Auctions
+Authors: Hossein Azari, William D. Heavlin, Hoda Heidari, Max Lin, and Sonia
+  Todorova
+Categories: cs.GT
+\\
+  Motivated by online display ad exchanges, we study a setting in which an
+exchange repeatedly interacts with bidders who have quota, making decisions
+about which subsets of bidders are called to participate in ad-slot-specific
+auctions. A bidder with quota cannot respond to more than a certain number of
+calls per second. In practice, random throttling is the principal solution by
+which these constraints are enforced. Given the repeated nature of the
+interaction with its bidders, the exchange has access to data containing
+information about each bidder's segments of interest. This information can be
+utilized to design smarter callout mechanisms --- with the potential of
+improving the exchange's long-term revenue. In this work, we present a general
+framework for evaluating and comparing the performance of various callout
+mechanisms using historical auction data only. To measure the impact of a
+callout mechanism on long-term revenue, we propose a strategic model that
+captures the repeated interaction between the exchange and bidders. Our model
+leads us to two metrics for performance: immediate revenue impact and social
+welfare. Next we present an empirical framework for estimating these two
+metrics from historical data. For the baseline to compare against, we consider
+random throttling, as well as a greedy algorithm with certain theoretical
+guarantees. We propose several natural callout mechanisms and investigate them
+through our framework on both synthetic and real auction data. We characterize
+the conditions under which each heuristic performs well and show that, in
+addition to being computationally faster, in practice our heuristics
+consistently and significantly outperform the baselines.
+\\ ( https://arxiv.org/abs/1702.01803 ,  730kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.02090
+Date: Fri, 27 Jan 2017 19:08:40 GMT   (15kb)
+
+Title: A Bayesian Game without epsilon equilibria
+Authors: Robert Samuel Simon and Grzegorz Tomkowicz
+Categories: cs.GT math.PR
+MSC-class: 91A60
+\\
+  We present a three player Bayesian game for which there is no epsilon
+equilibria in Borel measurable strategies for small enough epsilon, however
+there are non-measurable equilibria.
+\\ ( https://arxiv.org/abs/1702.02090 ,  15kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01780
+Date: Mon, 6 Feb 2017 20:10:10 GMT   (303kb,D)
+
+Title: Toward the automated analysis of complex diseases in genome-wide
+  association studies using genetic programming
+Authors: Andrew Sohn and Randal S. Olson and Jason H. Moore
+Categories: cs.NE cs.LG q-bio.QM stat.ML
+Comments: 9 pages, 4 figures, submitted to GECCO 2017 conference and currently
+  under review
+\\
+  Machine learning has been gaining traction in recent years to meet the demand
+for tools that can efficiently analyze and make sense of the ever-growing
+databases of biomedical data in health care systems around the world. However,
+effectively using machine learning methods requires considerable domain
+expertise, which can be a barrier of entry for bioinformaticians new to
+computational data science methods. Therefore, off-the-shelf tools that make
+machine learning more accessible can prove invaluable for bioinformaticians. To
+this end, we have developed an open source pipeline optimization tool
+(TPOT-MDR) that uses genetic programming to automatically design machine
+learning pipelines for bioinformatics studies. In TPOT-MDR, we implement
+Multifactor Dimensionality Reduction (MDR) as a feature construction method for
+modeling higher-order feature interactions, and combine it with a new expert
+knowledge-guided feature selector for large biomedical data sets. We
+demonstrate TPOT-MDR's capabilities using a combination of simulated and real
+world data sets from human genetics and find that TPOT-MDR significantly
+outperforms modern machine learning methods such as logistic regression and
+eXtreme Gradient Boosting (XGBoost). We further analyze the best pipeline
+discovered by TPOT-MDR for a real world problem and highlight TPOT-MDR's
+ability to produce a high-accuracy solution that is also easily interpretable.
+\\ ( https://arxiv.org/abs/1702.01780 ,  303kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.02125
+Date: Tue, 7 Feb 2017 18:17:25 GMT   (227kb)
+
+Title: Estimation of classrooms occupancy using a multi-layer perceptron
+Authors: Eug\'enio Rodrigues and Lu\'isa Dias Pereira and Ad\'elio Rodrigues
+  Gaspar and \'Alvaro Gomes and Manuel Carlos Gameiro da Silva
+Categories: cs.NE cs.LG
+Comments: 6 pages, 2 figures, conference article
+MSC-class: 68T01
+ACM-class: I.5.1
+\\
+  This paper presents a multi-layer perceptron model for the estimation of
+classrooms number of occupants from sensed indoor environmental data-relative
+humidity, air temperature, and carbon dioxide concentration. The modelling
+datasets were collected from two classrooms in the Secondary School of Pombal,
+Portugal. The number of occupants and occupation periods were obtained from
+class attendance reports. However, post-class occupancy was unknown and the
+developed model is used to reconstruct the classrooms occupancy by filling the
+unreported periods. Different model structure and environment variables
+combination were tested. The model with best accuracy had as input vector 10
+variables of five averaged time intervals of relative humidity and carbon
+dioxide concentration. The model presented a mean square error of 1.99,
+coefficient of determination of 0.96 with a significance of p-value < 0.001,
+and a mean absolute error of 1 occupant. These results show promising
+estimation capabilities in uncertain indoor environment conditions.
+\\ ( https://arxiv.org/abs/1702.02125 ,  227kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01783
+Date: Mon, 6 Feb 2017 20:14:05 GMT   (987kb,D)
+
+Title: From Formalised State Machines to Implementations of Robotic Controllers
+Authors: Wei Li, Alvaro Miyazawa, Pedro Ribeiro, Ana Cavalcanti, Jim Woodcock
+  and Jon Timmis
+Categories: cs.RO cs.SE
+Comments: camera-ready version in DARS 2016
+\\
+  Controllers for autonomous robotic systems can be specified using state
+machines. However, these are typically developed in an ad hoc manner without
+formal semantics, which makes it difficult to analyse the controller.
+Simulations are often used during the development, but a rigorous connection
+between the designed controller and the implementation is often overlooked.
+This paper presents a state-machine based notation, RoboChart, together with a
+tool to automatically create code from the state machines, establishing a
+rigorous connection between specification and implementation. In RoboChart, a
+robot's controller is specified either graphically or using a textual
+description language. The controller code for simulation is automatically
+generated through a direct mapping from the specification. We demonstrate our
+approach using two case studies (self-organized aggregation and swarm taxis) in
+swarm robotics. The simulations are presented using two different simulators
+showing the general applicability of our approach.
+\\ ( https://arxiv.org/abs/1702.01783 ,  987kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01848
+Date: Tue, 7 Feb 2017 02:09:07 GMT   (7630kb,D)
+
+Title: Data-Driven Learning and Planning for Environmental Sampling
+Authors: Kai-Chieh Ma, Lantao Liu, Hordur K. Heidarsson, Gaurav S. Sukhatme
+Categories: cs.RO
+Comments: arXiv admin note: substantial text overlap with arXiv:1609.07560
+\\
+  Robots such as autonomous underwater vehicles (AUVs) and autonomous surface
+vehicles (ASVs) have been used for sensing and monitoring aquatic environments
+such as oceans and lakes. Environmental sampling is a challenging task because
+the environmental attributes to be observed can vary both spatially and
+temporally, and the target environment is usually a large and continuous domain
+whereas the sampling data is typically sparse and limited. The challenges
+require that the sampling method must be informative and efficient enough to
+catch up with the environmental dynamics. In this paper we present a planning
+and learning method that enables a sampling robot to perform persistent
+monitoring tasks by learning and refining a spatiotemporal environmental model.
+Our environmental sampling framework consists of two components: to maximize
+the information collected, we propose an informative planning component that
+efficiently generates sampling waypoints that contain the maximal information;
+To alleviate the computational bottleneck caused by large-scale data
+accumulated, we develop a component based on a sparse Gaussian Process whose
+hyperparameters are learned online by taking advantage of only a subset of data
+that provides the greatest contribution. We validate our method with both
+simulations running on real ocean data and field trials with an ASV in a lake
+environment. Our experiments show that the proposed framework is both accurate
+and efficient in learning the spatiotemporal environmental model
+\\ ( https://arxiv.org/abs/1702.01848 ,  7630kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.02063
+Date: Mon, 6 Feb 2017 18:23:15 GMT   (10926kb,D)
+
+Title: Performance Control of Tendon-Driven Endoscopic Surgical Robots With
+  Friction and Hysteresis
+Authors: Thanh Nho Do, Tegoeh Tjahjowidodo, Michael Wai Shing Lau, and Soo Jay
+  Phee
+Categories: cs.RO math.DS
+Comments: 8 pages, 11 figures
+\\
+  In this study, a new position control scheme for the tendon-sheath mechanism
+(TSM) which is used in flexible medical devices is presented. TSM is widely
+used in dexterous robotic applications because it can flexibly work in limited
+space, in constrained environments, and provides efficient power transmission
+from the external actuator to the distal joint. However, nonlinearities from
+friction and backlash hysteresis between the tendon and the sheath pose
+challenges in achieving precise position controls of the end effector. Previous
+studies on the TSM only address the control problem under the assumptions of
+known tendon-sheath configuration and known model parameters of the backlash
+hysteresis nonlinearity. These approaches can have adverse impact and
+limitations on the overall system performances and practical implementation.
+This paper presents a new approach to model and control the TSM-driven flexible
+robotic systems. The designed controller does not require exact knowledge of
+nonlinear friction and backlash hysteresis parameters, only their bounds are
+online estimated. Simulation and experimental validation results show that the
+proposed control scheme can significantly improve the tracking performances
+without the presence of the exact knowledge of the model parameters and the
+sheath configuration.
+\\ ( https://arxiv.org/abs/1702.02063 ,  10926kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.02103
+Date: Tue, 7 Feb 2017 17:16:15 GMT   (1061kb,D)
+
+Title: An Integrated Simulator and Dataset that Combines Grasping and Vision
+  for Deep Learning
+Authors: Matthew Veres, Medhat Moussa, Graham W. Taylor
+Categories: cs.RO stat.ML
+Comments: Submission to CRV 2017
+\\
+  Deep learning is an established framework for learning hierarchical data
+representations. While compute power is in abundance, one of the main
+challenges in applying this framework to robotic grasping has been obtaining
+the amount of data needed to learn these representations, and structuring the
+data to the task at hand. Among contemporary approaches in the literature, we
+highlight key properties that have encouraged the use of deep learning
+techniques, and in this paper, detail our experience in developing a simulator
+for collecting cylindrical precision grasps of a multi-fingered dexterous
+robotic hand.
+\\ ( https://arxiv.org/abs/1702.02103 ,  1061kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01794
+Date: Mon, 6 Feb 2017 21:10:59 GMT   (342kb)
+
+Title: Robustness Analysis of Systems' Safety through a New Notion of
+  Input-to-State Safety
+Authors: Muhammad Zakiyullah Romdlony and Bayu Jayawardhana
+Categories: cs.SY math.OC
+Comments: 9 pages, pre-print submitted to Automatica
+MSC-class: 47N70, 93B52
+ACM-class: C.3; C.4; I.2.8
+\\
+  In this paper, we propose a new robustness notion that is applicable for
+certifying systems' safety with respect to external disturbance signals. The
+proposed input-to-state safety (ISSf) notion allows us to certify systems'
+safety in the presence of the disturbances which is analogous to the notion of
+input-to-state stability (ISS) for analyzing systems' stability.
+\\ ( https://arxiv.org/abs/1702.01794 ,  342kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01890
+Date: Tue, 7 Feb 2017 06:14:55 GMT   (152kb,D)
+
+Title: Graphical Models and Belief Propagation-hierarchy for Optimal
+  Physics-Constrained Network Flows
+Authors: Michael Chertkov, Sidhant Misra, Marc Vuffray, Dvijotham Krishnamurty,
+  and Pascal Van Hentenryck
+Categories: cs.SY stat.AP
+Comments: 28 pages, 1 figure
+\\
+  In this manuscript we review new ideas and first results on application of
+the Graphical Models approach, originated from Statistical Physics, Information
+Theory, Computer Science and Machine Learning, to optimization problems of
+network flow type with additional constraints related to the physics of the
+flow. We illustrate the general concepts on a number of enabling examples from
+power system and natural gas transmission (continental scale) and distribution
+(district scale) systems.
+\\ ( https://arxiv.org/abs/1702.01890 ,  152kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.02072
+Date: Tue, 7 Feb 2017 15:57:55 GMT   (377kb)
+
+Title: Adaptive Neural Control for a Class of Stochastic Nonlinear Systems with
+  Unknown Parameters, Unknown Nonlinear Functions and Stochastic Disturbances
+Authors: Chao-Yang Chena, Wei-Hua Gui, Zhi-Hong Guan, Ru-Liang Wang, Shao-Wu
+  Zhou
+Categories: cs.SY
+Comments: 9 pages, 6 figures, Neurocomputing
+\\
+  In this paper, adaptive neural control (ANC) is investigated for a class of
+strict-feedback nonlinear stochastic systems with unknown parameters, unknown
+nonlinear functions and stochastic disturbances. The new controller of adaptive
+neural network with state feedback is presented by using a universal
+approximation of radial basis function neural network and backstepping. An
+adaptive neural network state-feedback controller is designed by constructing a
+suitable Lyapunov function. Adaptive bounding design technique is used to deal
+with the unknown nonlinear functions and unknown parameters. It is shown that,
+the global asymptotically stable in probability can be achieved for the
+closed-loop system. The simulation results are presented to demonstrate the
+effectiveness of the proposed control strategy in the presence of unknown
+parameters, unknown nonlinear functions and stochastic disturbances.
+\\ ( https://arxiv.org/abs/1702.02072 ,  377kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.02080
+Date: Tue, 7 Feb 2017 16:19:01 GMT   (734kb)
+
+Title: Optimal Tracking Performance of Control Systems with Two-Channel
+  Constraints
+Authors: Chao-Yang Chen, Bin Hu, Zhi-Hong Guanb, Ming Chi, Ding-Xin He
+Categories: cs.SY
+Comments: 17 pages, 9 figures, Information Sciences
+DOI: 10.1016/j.ins.2016.09.025
+\\
+  This paper focuses on the tracking performance limitation for a class of
+networked control systems(NCSs) with two-channel constraints. In communication
+channels, we consider bandwidth, energy constraints and additive colored
+Gaussian noise(ACGN) simultaneously. In plant, non-minimal zeros and unstable
+poles are considered; multi-repeated zeros and poles are also applicable. To
+obtain the optimal performance, the two-parameter controller is adopted. The
+theoretical results show that the optimal tracking performance is influenced by
+the non-minimum phase zeros, unstable poles, gain at all frequencies of the
+given plant, and the reference input signal for NCSs. Moreover, the performance
+limitation is also affected by the limited bandwidth, additive colored Gaussian
+noise, and the corresponding multiples for the non-minimum phase zeros and
+unstable poles. Additionally, the channel minimal input power constraints are
+given under the condition ensuring the stability of the system and acquiring
+system performance limitation. Finally, simulation examples are given to
+illustrate the theoretical results.
+\\ ( https://arxiv.org/abs/1702.02080 ,  734kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.02096
+Date: Tue, 7 Feb 2017 16:53:32 GMT   (643kb)
+
+Title: Optimal Tracking Performance Limitation of Networked Control Systems
+  with Limited Bandwidth and Additive Colored White Gaussian Noise
+Authors: Zhi-Hong Guan, Chao-Yang Chen, Gang Feng, Tao Li
+Categories: cs.SY
+Comments: 10 pages, 4 figures, IEEE Transactions on Circuits and Systems I:
+  Regular Papers
+DOI: 10.1109/TCSI.2012.2215717
+\\
+  This paper studies optimal tracking performance issues for
+multi-input-multi-output linear time-invariant systems under networked control
+with limited bandwidth and additive colored white Gaussian noise channel. The
+tracking performance is measured by control input energy and the energy of the
+error signal between the output of the system and the reference signal with
+respect to a Brownian motion random process. This paper focuses on two kinds of
+network parameters, the basic network parameter-bandwidth and the additive
+colored white Gaussian noise, and studies the tracking performance limitation
+problem. The best attainable tracking performance is obtained, and the impact
+of limited bandwidth and additive colored white Gaussian noise of the
+communication channel on the attainable tracking performance is revealed. It is
+shown that the optimal tracking performance depends on nonminimum phase zeros,
+gain at all frequencies and their directions unitary vector of the given plant,
+as well as the limited bandwidth and additive colored white Gaussian noise of
+the communication channel. The simulation results are finally given to
+illustrate the theoretical results.
+\\ ( https://arxiv.org/abs/1702.02096 ,  643kb)
+%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01975 (*cross-listing*)
+Date: Tue, 7 Feb 2017 12:01:08 GMT   (313kb,D)
+
+Title: Learning what matters - Sampling interesting patterns
+Authors: Vladimir Dzyuba, Matthijs van Leeuwen
+Categories: stat.ML cs.AI cs.DB
+Comments: PAKDD 2017, extended version
+\\
+  In the field of exploratory data mining, local structure in data can be
+described by patterns and discovered by mining algorithms. Although many
+solutions have been proposed to address the redundancy problems in pattern
+mining, most of them either provide succinct pattern sets or take the interests
+of the user into account-but not both. Consequently, the analyst has to invest
+substantial effort in identifying those patterns that are relevant to her
+specific interests and goals. To address this problem, we propose a novel
+approach that combines pattern sampling with interactive data mining. In
+particular, we introduce the LetSIP algorithm, which builds upon recent
+advances in 1) weighted sampling in SAT and 2) learning to rank in interactive
+pattern mining. Specifically, it exploits user feedback to directly learn the
+parameters of the sampling distribution that represents the user's interests.
+We compare the performance of the proposed algorithm to the state-of-the-art in
+interactive pattern mining by emulating the interests of a user. The resulting
+system allows efficient and interleaved learning and sampling, thus
+user-specific anytime data exploration. Finally, LetSIP demonstrates favourable
+trade-offs concerning both quality-diversity and exploitation-exploration when
+compared to existing methods.
+\\ ( https://arxiv.org/abs/1702.01975 ,  313kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01991 (*cross-listing*)
+Date: Tue, 7 Feb 2017 13:02:09 GMT   (738kb,D)
+
+Title: Representations of language in a model of visually grounded speech
+  signal
+Authors: Grzegorz Chrupa{\l}a, Lieke Gelderloos, Afra Alishahi
+Categories: cs.CL cs.AI cs.LG
+Comments: 10 pages
+\\
+  We present a visually grounded model of speech perception which projects
+spoken utterances and images to a joint semantic space. We use a multi-layer
+recurrent highway network to model the temporal nature of spoken speech, and
+show that it learns to extract both form and meaning-based linguistic knowledge
+from the input signal. We carry out an in-depth analysis of the representations
+used by different components of the trained model and show that encoding of
+semantic aspects tends to become richer as we go up the hierarchy of layers,
+whereas encoding of form-related aspects of the language input tends to
+initially increase and then plateau or decrease.
+\\ ( https://arxiv.org/abs/1702.01991 ,  738kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.02032 (*cross-listing*)
+Date: Sat, 4 Feb 2017 12:35:37 GMT   (15kb,D)
+
+Title: Solving the Brachistochrone Problem by an Influence Diagram
+Authors: Ji\v{r}\'i Vomlel
+Categories: math.OC cs.AI
+Comments: 8 pages, 2 figures
+MSC-class: 68T37
+ACM-class: I.2
+\\
+  Influence diagrams are a decision-theoretic extension of probabilistic
+graphical models. In this paper we show how they can be used to solve the
+Brachistochrone problem. We present results of numerical experiments on this
+problem, compare the solution provided by the influence diagram with the
+optimal solution. The R code used for the experiments is presented in the
+Appendix.
+\\ ( https://arxiv.org/abs/1702.02032 ,  15kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01847 (*cross-listing*)
+Date: Tue, 7 Feb 2017 02:08:51 GMT   (763kb,D)
+
+Title: Low Rank Matrix Recovery with Simultaneous Presence of Outliers and
+  Sparse Corruption
+Authors: Mostafa Rahmani, George Atia
+Categories: stat.ML cs.CV cs.LG
+\\
+  We study a data model in which the data matrix D can be expressed as D = L +
+S + C, where L is a low rank matrix, S an element-wise sparse matrix and C a
+matrix whose non-zero columns are outlying data points. To date, robust PCA
+algorithms have solely considered models with either S or C, but not both. As
+such, existing algorithms cannot account for simultaneous element-wise and
+column-wise corruptions. In this paper, a new robust PCA algorithm that is
+robust to simultaneous types of corruption is proposed. Our approach hinges on
+the sparse approximation of a sparsely corrupted column so that the sparse
+expansion of a column with respect to the other data points is used to
+distinguish a sparsely corrupted inlier column from an outlying data point. We
+also develop a randomized design which provides a scalable implementation of
+the proposed approach. The core idea of sparse approximation is analyzed
+analytically where we show that the underlying ell_1-norm minimization can
+obtain the representation of an inlier in presence of sparse corruptions.
+\\ ( https://arxiv.org/abs/1702.01847 ,  763kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01961 (*cross-listing*)
+Date: Tue, 7 Feb 2017 11:13:08 GMT   (2020kb,D)
+
+Title: A Region Based Easy Path Wavelet Transform For Sparse Image
+  Representation
+Authors: Renato Budinich
+Categories: cs.IT cs.CV cs.GR math.IT
+MSC-class: 65T60, 68U10, 94A08, 42C40
+\\
+  The Easy Path Wavelet Transform is an adaptive transform for bivariate
+functions (in particular natural images) which has been proposed in [1]. It
+provides a sparse representation by finding a path in the domain of the
+function leveraging the local correlations of the function values. It then
+applies a one dimensional wavelet transform to the obtained vector, decimates
+the points and iterates the procedure. The main drawback of such method is the
+need to store, for each level of the transform, the path which vectorizes the
+two dimensional data. Here we propose a variation on the method which consists
+of firstly applying a segmentation procedure to the function domain,
+partitioning it into regions where the variation in the function values is low;
+in a second step, inside each such region, a path is found in some
+deterministic way, i.e. not data-dependent. This circumvents the need to store
+the paths at each level, while still obtaining good quality lossy compression.
+This method is particularly well suited to encode a Region of Interest in the
+image with different quality than the rest of the image.
+  [1] Gerlind Plonka. The easy path wavelet transform: A new adaptive wavelet
+transform for sparse representation of two-dimensional data. Multiscale
+Modeling & Simulation, 7(3):1474$-$1496, 2008.
+\\ ( https://arxiv.org/abs/1702.01961 ,  2020kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01805 (*cross-listing*)
+Date: Mon, 6 Feb 2017 22:00:34 GMT   (850kb,D)
+
+Title: A Digital Hardware Fast Algorithm and FPGA-based Prototype for a Novel
+  16-point Approximate DCT for Image Compression Applications
+Authors: F. M. Bayer, R. J. Cintra, A. Edirisuriya, A. Madanayake
+Categories: cs.MM cs.AR cs.DS cs.IT math.IT stat.ME
+Comments: 17 pages, 6 figures, 6 tables
+Journal-ref: Measurement Science and Technology, Volume 23, Number 11, 2012
+DOI: 10.1088/0957-0233/23/11/114010
+\\
+  The discrete cosine transform (DCT) is the key step in many image and video
+coding standards. The 8-point DCT is an important special case, possessing
+several low-complexity approximations widely investigated. However, 16-point
+DCT transform has energy compaction advantages. In this sense, this paper
+presents a new 16-point DCT approximation with null multiplicative complexity.
+The proposed transform matrix is orthogonal and contains only zeros and ones.
+The proposed transform outperforms the well-know Walsh-Hadamard transform and
+the current state-of-the-art 16-point approximation. A fast algorithm for the
+proposed transform is also introduced. This fast algorithm is experimentally
+validated using hardware implementations that are physically realized and
+verified on a 40 nm CMOS Xilinx Virtex-6 XC6VLX240T FPGA chip for a maximum
+clock rate of 342 MHz. Rapid prototypes on FPGA for 8-bit input word size shows
+significant improvement in compressed image quality by up to 1-2 dB at the cost
+of only eight adders compared to the state-of-art 16-point DCT approximation
+algorithm in the literature [S. Bouguezel, M. O. Ahmad, and M. N. S. Swamy. A
+novel transform for image compression. In {\em Proceedings of the 53rd IEEE
+International Midwest Symposium on Circuits and Systems (MWSCAS)}, 2010].
+\\ ( https://arxiv.org/abs/1702.01805 ,  850kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01852 (*cross-listing*)
+Date: Tue, 7 Feb 2017 02:42:47 GMT   (2541kb,D)
+
+Title: Experimental Comparison of Two Quantum Computing Architectures
+Authors: N. M. Linke, D. Maslov, M. Roetteler, S. Debnath, C. Figgatt, K. A.
+  Landsman, K. Wright, and C. Monroe
+Categories: quant-ph cs.ET
+\\
+  We run a selection of algorithms on two state-of-the-art 5-qubit quantum
+computers that are based on different technology platforms. One is a publicly
+accessible superconducting transmon device with limited connectivity, and the
+other is a fully connected trapped-ion system. Even though the two systems have
+different native quantum interactions, both can be programmed in a way that is
+blind to the underlying hardware, thus allowing the first comparison of
+identical quantum algorithms between different physical systems. We show that
+quantum algorithms and circuits that employ more connectivity clearly benefit
+from a better connected system of qubits. While the quantum systems here are
+not yet large enough to eclipse classical computers, this experiment exposes
+critical factors of scaling quantum computers, such as qubit connectivity and
+gate expressivity. In addition, the results suggest that co-designing
+particular quantum applications with the hardware itself will be paramount in
+successfully using quantum computers in the future.
+\\ ( https://arxiv.org/abs/1702.01852 ,  2541kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.01953 (*cross-listing*)
+Date: Tue, 7 Feb 2017 10:49:57 GMT   (15kb)
+
+Title: A short proof of correctness of the quasi-polynomial time algorithm for
+  parity games
+Authors: Hugo Gimbert (LaBRI), Rasmus Ibsen-Jensen (IST Austria)
+Categories: cs.FL cs.GT
+\\
+  Recently Cristian S. Calude, Sanjay Jain, Bakhadyr Khoussainov, Wei Li and
+Frank Stephan proposed a quasi-polynomial time algorithm for parity games. This
+paper proposes a short proof of correctness of their algorithm.
+\\ ( https://arxiv.org/abs/1702.01953 ,  15kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1702.02113 (*cross-listing*)
+Date: Tue, 7 Feb 2017 17:38:34 GMT   (33kb)
+
+Title: Rare Nash Equilibria and the Price of Anarchy in Large Static Games
+Authors: Daniel Lacker and Kavita Ramanan
+Categories: math.PR cs.GT math.OC
+\\
+  We study a static game played by a finite number of agents, in which agents
+are assigned independent and identically distributed random types and each
+agent minimizes its objective function by choosing from a set of admissible
+actions that depends on its type. The game is anonymous in the sense that the
+objective function of each agent depends on the actions of other agents only
+through the empirical distribution of their type-action pairs. We study the
+asymptotic behavior of Nash equilibria, as the number of agents tends to
+infinity, first by deriving laws of large numbers characterizes almost sure
+limit points of Nash equilibria in terms of so-called Cournot-Nash equilibria
+of an associated nonatomic game. Our main results are large deviation
+principles that characterize the probability of rare Nash equilibria and
+associated conditional limit theorems describing the behavior of equilibria
+conditioned on a rare event. The results cover situations when neither the
+finite-player game nor the associated nonatomic game has a unique equilibrium.
+In addition, we study the asymptotic behavior of the price of anarchy,
+complementing existing worst-case bounds with new probabilistic bounds in the
+context of congestion games, which are used to model traffic routing in
+networks.
+\\ ( https://arxiv.org/abs/1702.02113 ,  33kb)
