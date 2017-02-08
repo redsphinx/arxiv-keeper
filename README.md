@@ -35,3 +35,8 @@ Tips
 
 1. Narrow windows are easier to read.
 2. Darker backgrounds are less stressful for your eyes.
+
+
+Subscribing to the Mail Lists
+----------
+use https://arxiv.org/corr/subscribe
