@@ -9,3 +9,5 @@ CHOICE_STRING = """1: Neurant
 2: Internship
 3: Fundamental
 4: Interesting"""
+
+KEYWORDS = ['deep', 'learning', 'neural', 'network']

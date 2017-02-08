@@ -2,12 +2,12 @@ import os
 import re
 import subprocess
 import sys
-from termcolor import colored
 
 from sqlalchemy import func, or_
+from termcolor import colored
 
 from model import session, Entry
-from settings import CHOICE_STRING
+from settings import CHOICE_STRING, KEYWORDS
 
 template_string = """
 Remaining: \t%d
@@ -16,41 +16,34 @@ Abstract: \t %s
 """ + CHOICE_STRING + """
 Make a choice"""
 
-keywords = ['deep', 'learning', 'neural', 'network']
-conditions = []
-# for keyword in keywords:
-#     conditions.append(func.lower(Entry.title).like("%%%s%%"%keyword))
-#     conditions.append(func.lower(Entry.abstract).like("%%%s%%"%keyword))
-entries = session.query(Entry).filter(or_(
-    func.lower(Entry.title).like("%deep%"),
-    func.lower(Entry.title).like("%learning%"),
-    func.lower(Entry.title).like("%neural%"),
-    func.lower(Entry.title).like("%network%"),
-    func.lower(Entry.abstract).like("%deep%"),
-    func.lower(Entry.abstract).like("%learning%"),
-    func.lower(Entry.abstract).like("%neural%"),
-    func.lower(Entry.abstract).like("%network%"))
-).filter(Entry.abstract != None).filter(Entry.read != True).all()
-count = session.query(func.count(Entry)).filter(or_(
-    func.lower(Entry.title).like("%deep%"),
-    func.lower(Entry.title).like("%learning%"),
-    func.lower(Entry.title).like("%neural%"),
-    func.lower(Entry.title).like("%network%"),
-    func.lower(Entry.abstract).like("%deep%"),
-    func.lower(Entry.abstract).like("%learning%"),
-    func.lower(Entry.abstract).like("%neural%"),
-    func.lower(Entry.abstract).like("%network%"))
-).filter(Entry.abstract != None).filter(Entry.read != True).one()
-total= int(count[0])
-print total
+clauses = ()
+for keyword in KEYWORDS:
+    clauses += (func.lower(Entry.title).like("%%%s%%" % keyword), func.lower(Entry.abstract).like("%%%s%%" % keyword),)
 
+entries = session \
+    .query(Entry) \
+    .filter(or_(*clauses)) \
+    .filter(Entry.abstract != None) \
+    .filter(Entry.read != True) \
+    .all()
+
+count = session \
+    .query(func.count(Entry)) \
+    .filter(or_(*clauses)) \
+    .filter(Entry.abstract != None) \
+    .filter(Entry.read != True) \
+    .one()
+
+total = int(count[0])
+print total
 
 for entry in entries:
     os.system('clear')
 
     title = entry.title
     abstract = entry.abstract
-    for keyword in keywords:
+    # @TODO it doesn't highlight if there is a uppercase character in word.
+    for keyword in KEYWORDS:
         title = title.replace(keyword, colored(keyword, 'red'))
         abstract = abstract.replace(keyword, colored(keyword, 'red'))
     print template_string % (total, title, abstract)
