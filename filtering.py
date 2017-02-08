@@ -13,7 +13,7 @@ template_string = """
 Remaining: \t%d
 Title: \t\t %s
 Abstract: \t %s
-""" + CHOICE_STRING + """
+%s
 Make a choice"""
 
 clauses = ()
@@ -46,7 +46,7 @@ for entry in entries:
     for keyword in KEYWORDS:
         title = title.replace(keyword, colored(keyword, 'red'))
         abstract = abstract.replace(keyword, colored(keyword, 'red'))
-    print template_string % (total, title, abstract)
+    print template_string % (total, title, abstract, CHOICE_STRING)
     user_input = sys.stdin.readline()
     entry.read = True
     session.add(entry)
