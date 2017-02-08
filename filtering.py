@@ -7,15 +7,13 @@ from termcolor import colored
 from sqlalchemy import func, or_
 
 from model import session, Entry
+from settings import CHOICE_STRING
 
 template_string = """
 Remaining: \t%d
 Title: \t\t %s
 Abstract: \t %s
-1: Neurant
-2: Internship
-3: Fundamental
-4: Interesting
+""" + CHOICE_STRING + """
 Make a choice"""
 
 keywords = ['deep', 'learning', 'neural', 'network']
